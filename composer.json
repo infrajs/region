@@ -1,0 +1,15 @@
+{
+	"name": "infrajs/region",
+	"homepage":"https://github.com/infrajs/region",
+	"description":"Определение региона посетителя по IP",
+	"license": "GPL3",
+	"autoload": {
+		"psr-4": { "infrajs\\region\\": "/" }
+	},
+	"require":{
+		"template":"~1",
+		"event":"~1",
+		"env":"~1",
+		"config":"~1"
+	}
+}
