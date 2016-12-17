@@ -6,7 +6,8 @@ use infrajs\region\Region;
 use infrajs\event\Event;
 
 Env::add('region', function () {
-	$data = IP::get();
+	$data = IP::get('176.194.181.238');
+	
 	$data = array(
 		'city' => $data['city'],
 		'region' => $data['region_name'],
@@ -14,10 +15,8 @@ Env::add('region', function () {
 		'country'=> $data['country_name'],
 		'country_code' => $data['country_code']
 	);
-	if ($data['country_code'] == 'RU') {
-		$data['city'] = Region::trans2rus($data['city']);
-		$data['region'] = Region::trans2rus($data['region']);
-	}
+
+	foreach($data as $k=>$v) $data[$k] = str_replace("'","",$v);
 	return $data;
 }, function ($newval) {
 	return sizeof($newval) == 5;
