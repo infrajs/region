@@ -1,5 +1,5 @@
 {
 	"require":"infra.php",
-	"dependencies":["template","event"],
+	"dependencies":["template","event","lang"],
 	"js":["Region.js","infra.js"]
 }
