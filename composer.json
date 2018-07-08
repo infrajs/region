@@ -9,6 +9,7 @@
 		"infrajs/template":"~1",
 		"infrajs/event":"~1",
 		"infrajs/lang":"~1",
+		"infrajs/ip":"~1",
 		"infrajs/env":"~1",
 		"infrajs/config":"~1"
 	}
